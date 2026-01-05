@@ -1,0 +1,148 @@
+.main-header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 9997;
+}
+
+.header-open {
+  transition: height 1s cubic-bezier(0.29, 1.03, 0.62, 0.97);
+}
+
+.header-close {
+  transition: height 0.3s ease;
+}
+
+.main-header-logo {
+  position: relative;
+  cursor: pointer;
+}
+
+.fixed-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.white {
+  background: #ffffff;
+}
+
+@keyframes upper-menu-bar-move {
+  0% {
+    transform: rotate(0deg) translateX(0) translateY(0);
+  }
+  100% {
+    transform: rotate(45deg) translateX(0rem) translateY(0.2rem);
+  }
+}
+
+@keyframes lower-menu-bar-move {
+  0% {
+    transform: rotate(0deg) translateX(0) translateY(0);
+  }
+  100% {
+    transform: rotate(-45deg) translateX(0.1rem) translateY(-0.3rem);
+  }
+}
+
+@keyframes upper-menu-bar-move-rev {
+  0% {
+    transform: rotate(45deg) translateX(0rem) translateY(0.2rem);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0) translateY(0);
+  }
+}
+
+@keyframes lower-menu-bar-move-rev {
+  0% {
+    transform: rotate(-45deg) translateX(0.1rem) translateY(-0.3rem);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0) translateY(0);
+  }
+}
+
+.upper-menu-bar-open {
+  animation: upper-menu-bar-move 0.3s ease forwards;
+}
+
+.lower-menu-bar-open {
+  animation: lower-menu-bar-move 0.3s ease forwards;
+}
+
+.upper-menu-bar-close {
+  animation: upper-menu-bar-move-rev 0.3s ease forwards;
+}
+
+.lower-menu-bar-close {
+  animation: lower-menu-bar-move-rev 0.3s ease forwards;
+}
+
+@keyframes menu-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menu-disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.menu-appear {
+  animation: menu-appear 0.15s ease forwards;
+}
+
+.menu-disappear {
+  animation: menu-disappear 0.15s ease forwards;
+}
+
+.mobile-menu-item {
+  font-family: 'kh-l';
+  &:hover {
+    font-weight: bold;
+    font-family: 'kh-m';
+  }
+}
+
+.safari-issue {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+
+.transform-0 {
+  transform: translate3d(0, 0, 0);
+}
+
+.safari-blur {
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.safari-blur-brightness {
+  -webkit-backdrop-filter: blur(12px) brightness(0.7);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.5s ease forwards;
+}

@@ -1,0 +1,14 @@
+@keyframes intersection-appear-anim {
+    0% {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+
+.intersection-appear-anim {
+    animation: intersection-appear-anim 0.8s ease forwards;
+}

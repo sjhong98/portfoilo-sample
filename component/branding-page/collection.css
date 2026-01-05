@@ -1,0 +1,205 @@
+@media (min-width: 640px) {
+  .grid-container {
+    width: 100vw;
+    height: 220vh;
+    margin-bottom: 120vh;
+    position: relative;
+  }
+}
+
+@media (max-width: 639px) {
+  .grid-container {
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+  }
+}
+
+.grid-container .grid {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 70vw;
+  height: 60vw;
+  margin: 0 15vw;
+  position: absolute;
+}
+
+.grid-container .grid .gridLayer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  will-change: transform;
+  -webkit-transform-origin: 50.951% 64%;
+  -moz-transform-origin: 50.951% 64%;
+  -ms-transform-origin: 50.951% 64%;
+  transform-origin: 50.951% 64%;
+}
+
+.grid-container .grid .gridLayer .gridBlock {
+  -moz-background-size: cover;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-container .grid .gridLayer:nth-child(1) .gridBlock {
+  top: 5vw;
+  left: -10vw;
+  width: 32.5vw;
+  height: 17.5vw;
+}
+
+.grid-container .grid .gridLayer:nth-child(2) .gridBlock {
+  top: 7vw;
+  left: 25vw;
+  width: 29.5vw;
+  height: 19vw;
+}
+
+.grid-container .grid .gridLayer:nth-child(3) .gridBlock {
+  left: 57vw;
+  top: 1vw;
+  width: 32vw;
+  height: 17vw;
+}
+
+.grid-container .grid .gridLayer:nth-child(4) .gridBlock {
+  top: 28.5vw;
+  left: 19vw;
+  width: 35.521vw;
+  height: 19.948vw;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.grid-container .grid .gridLayer:nth-child(5) .gridBlock {
+  top: 25vw;
+  left: -16vw;
+  width: 32.5vw;
+  height: 19.948vw;
+}
+
+.grid-container .grid .gridLayer:nth-child(6) .gridBlock {
+  left: 57vw;
+  top: 20.5vw;
+  width: 25.625vw;
+  height: 17.344vw;
+}
+
+.grid-container .grid .gridLayer:nth-child(7) .gridBlock {
+  left: -13.5vw;
+  top: 51vw;
+  width: 36.5vw;
+  height: 21.5vw;
+}
+
+.grid-container .grid .gridLayer:nth-child(8) .gridBlock {
+  top: 51vw;
+  left: 25.5vw;
+  width: 29vw;
+  height: 15vw;
+}
+
+.grid-container .grid .gridLayer:nth-child(9) .gridBlock {
+  top: 40.5vw;
+  left: 57vw;
+  width: 23.281vw;
+  height: 33.698vw;
+}
+
+.grid-container .grid .gridLayer:nth-child(10) .gridBlock-link {
+  top: 75vw;
+  left: -15vw;
+  width: 30vw;
+  height: 20vw;
+  margin-left: -19vw;
+}
+
+.grid-container .grid .gridLayer:nth-child(10) .gridBlock {
+  top: 75vw;
+  left: -15vw;
+  width: 11vw;
+  height: 20vw;
+}
+
+.grid-container .grid .gridLayer:nth-child(11) .gridBlock {
+  top: 75vw;
+  left: -1.5vw;
+  width: 28.5vw;
+  height: 17vw;
+}
+
+.grid-container .grid .gridLayer:nth-child(12) .gridBlock {
+  top: 68.5vw;
+  left: 29.5vw;
+  width: 24vw;
+  height: 21.5vw;
+}
+
+.grid-container .grid .gridLayer:nth-child(13) .gridBlock {
+  top: 76.8vw;
+  left: 57vw;
+  width: 30vw;
+  height: 19vw;
+}
+
+/*.gridLayer:nth-child(1) .gridBlock {*/
+/*  background-image: url('../img/collection-case03-photo-01.jpg');*/
+/*}*/
+
+/*.gridLayer:nth-child(2) .gridBlock {*/
+/*  background-image: url('../img/collection-case03-photo-02.jpg');*/
+/*}*/
+
+/*.gridLayer:nth-child(3) .gridBlock {*/
+/*  background-image: url('../img/collection-case03-photo-03.jpg');*/
+/*}*/
+
+/*.gridLayer:nth-child(4) .gridBlock {*/
+/*  background-image: url('../img/collection-case03-photo-main.jpg');*/
+/*}*/
+
+/*.gridLayer:nth-child(5) .gridBlock {*/
+/*  background-image: url('../img/collection-case03-photo-04.jpg');*/
+/*}*/
+
+/*.gridLayer:nth-child(6) .gridBlock {*/
+/*  background-image: url('../img/collection-case03-photo-06.jpg');*/
+/*}*/
+
+/*.gridLayer:nth-child(7) .gridBlock {*/
+/*  background-image: url('../img/collection-case03-photo-07.jpg');*/
+/*}*/
+
+/*.gridLayer:nth-child(8) .gridBlock {*/
+/*  background-image: url('../img/collection-case03-photo-08.jpg');*/
+/*}*/
+
+/*.gridLayer:nth-child(9) .gridBlock {*/
+/*  background-image: url('../img/collection-case03-photo-09.jpg');*/
+/*}*/
+
+/*.gridLayer:nth-child(10) .gridBlock {*/
+/*  background-image: url('../img/collection-case03-photo-10.jpg');*/
+/*}*/
+
+/*.gridLayer:nth-child(11) .gridBlock {*/
+/*  background-image: url('../img/collection-case03-photo-11.jpg');*/
+/*}*/
+
+/*.gridLayer:nth-child(12) .gridBlock {*/
+/*  background-image: url('../img/collection-case03-photo-12.jpg');*/
+/*}*/
+
+/*.gridLayer:nth-child(13) .gridBlock {*/
+/*  background-image: url('../img/collection-case03-photo-13.jpg');*/
+/*}*/
