@@ -3,11 +3,8 @@
 import Header from '@/component/landing-page/1.Header'
 import Footer from '@/component/landing-page/13.Footer'
 import LandingLayout from '@/component/landing-page/LandingLayout'
-import { useEffect, useRef, useState } from 'react'
 import dynamic from 'next/dynamic'
-
-import { useInView } from 'react-intersection-observer'
-import { redirect, useSearchParams } from 'next/navigation'
+import { useEffect, useState } from 'react'
 
 const Hero = dynamic(() => import('@/component/landing-page/2.Hero'), { ssr: true })
 const AIAutomation = dynamic(() => import('@/component/landing-page/3.AIAutomation'), { ssr: true })
@@ -25,7 +22,6 @@ const CustomerService247 = dynamic(() => import('@/component/landing-page/12.Cus
 
 export default function LandingPageComponent() {
   const [initialRendered, setInitialRendered] = useState(false)
-  const searchParams = useSearchParams()
 
   // Handle loading state
 

@@ -1,14 +1,11 @@
-import { Suspense } from 'react'
-import { IntersectionProvider } from '@/context/intersectionContext'
 import LandingPageComponent from '@/component/landing-page/LandingPage'
+import { IntersectionProvider } from '@/context/intersectionContext'
 
 const LandingPage = async () => {
 
     return (
         <IntersectionProvider>
-            <Suspense fallback={<div>Loading...</div>}>
-                <LandingPageComponent />
-            </Suspense>
+            <LandingPageComponent />
         </IntersectionProvider>
     )
 }
