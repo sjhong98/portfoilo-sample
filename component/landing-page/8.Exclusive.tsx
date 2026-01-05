@@ -30,7 +30,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
     visible: {
       y: 0,
       opacity: 1,
-      transition: { type: 'spring', stiffness: 100 }
+      transition: { type: 'spring' as const, stiffness: 100 }
     }
   }
 
@@ -465,7 +465,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                 </div>
                 <div className='flex flex-col justify-start items-start gap-[15px]'>
                   <div className='inline-flex justify-start items-center gap-[15px]'>
-                    <InViewWrapper>
+                    <div>
                       <svg xmlns='http://www.w3.org/2000/svg' width='40' height='41' viewBox='0 0 40 41' fill='none'>
                         <g clipPath='url(#clip0_1009_1973)'>
                           <circle cx='20' cy='20.8496' r='20' fill='#EE7373' fillOpacity='0.1' />
@@ -484,7 +484,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                           </clipPath>
                         </defs>
                       </svg>
-                    </InViewWrapper>
+                    </div>
                     <div className='inline-flex flex-col justify-start items-start gap-[5px]'>
                       <p className="justify-start text-[#1d2232]/70 text-3xl font-semibold font-['Pretendard']">
                         일반 서비스
@@ -495,7 +495,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                     </div>
                   </div>
                   <div className='inline-flex justify-start items-center gap-[15px]'>
-                    <InViewWrapper>
+                    <div>
                       <svg xmlns='http://www.w3.org/2000/svg' width='40' height='41' viewBox='0 0 40 41' fill='none'>
                         <g clipPath='url(#clip0_1009_1984)'>
                           <circle cx='20' cy='20.8496' r='20' fill='#7BC13A' fillOpacity='0.1' />
@@ -512,7 +512,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                           </clipPath>
                         </defs>
                       </svg>
-                    </InViewWrapper>
+                    </div>
                     <p className='inline-flex flex-col justify-start items-start gap-[5px]'>
                       <span className="justify-start text-[#1d2232]/70 text-3xl font-semibold font-['Pretendard']">
                         포포넛
@@ -527,7 +527,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                   </div>
                 </div>
               </div>
-              <div className='w-[706px] h-[468.27px] relative rounded-[30px] overflow-hidden'>
+              <InViewWrapper className='w-[706px] h-[468.27px] relative rounded-[30px] overflow-hidden'>
                 <Image
                   src={Exclusive_calendar}
                   alt={'직관적인 비주얼 캘린더'}
@@ -536,7 +536,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                   className={'w-[707px] h-[469px] object-cover'}
                   placeholder={'blur'}
                 />
-              </div>
+              </InViewWrapper>
             </motion.div>
           </section>
         </li >
@@ -553,9 +553,9 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
               viewport={{ once: true, amount: 0.2 }}
               className='min-w-[1582px] p-[60px] bg-white rounded-[40px] shadow-[0px_2px_60px_10px_rgba(0,0,0,0.05)] inline-flex justify-center items-center gap-[50px] overflow-hidden'
             >
-              <div className='w-[660px] h-[460.27px] relative bg-white rounded-[30px] overflow-hidden'>
+              <InViewWrapper className='w-[660px] h-[460.27px] relative bg-white rounded-[30px] overflow-hidden'>
                 <Exclusive_sendAgreementAlarm />
-              </div>
+              </InViewWrapper>
               <div className='w-[706px] self-stretch inline-flex flex-col justify-center items-start gap-[45px]'>
                 <div className='self-stretch flex flex-col justify-start items-start gap-[15px]'>
                   <p className="justify-start text-[#dee1e7] text-3xl font-bold font-['Pretendard']">완전 자동화</p>
@@ -579,7 +579,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                 </div>
                 <div className='flex flex-col justify-start items-start gap-[15px]'>
                   <div className='inline-flex justify-start items-center gap-[15px]'>
-                    <InViewWrapper>
+                    <div>
                       <svg xmlns='http://www.w3.org/2000/svg' width='40' height='41' viewBox='0 0 40 41' fill='none'>
                         <g clipPath='url(#clip0_1009_2091)'>
                           <circle cx='20' cy='20.125' r='20' fill='#EE7373' fillOpacity='0.1' />
@@ -598,7 +598,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                           </clipPath>
                         </defs>
                       </svg>
-                    </InViewWrapper>
+                    </div>
                     <div className='inline-flex flex-col justify-start items-start gap-[5px]'>
                       <p className="justify-start text-[#1d2232]/70 text-3xl font-semibold font-['Pretendard']">
                         일반 서비스
@@ -609,7 +609,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                     </div>
                   </div>
                   <div className='inline-flex justify-start items-center gap-[15px]'>
-                    <InViewWrapper>
+                    <div>
                       <svg xmlns='http://www.w3.org/2000/svg' width='40' height='41' viewBox='0 0 40 41' fill='none'>
                         <g clipPath='url(#clip0_1009_2098)'>
                           <circle cx='20' cy='20.125' r='20' fill='#7BC13A' fillOpacity='0.1' />
@@ -626,7 +626,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                           </clipPath>
                         </defs>
                       </svg>
-                    </InViewWrapper>
+                    </div>
                     <div className='inline-flex flex-col justify-start items-start gap-[5px]'>
                       <p className="justify-start text-[#1d2232]/70 text-3xl font-semibold font-['Pretendard']">
                         포포넛
@@ -677,7 +677,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                 </div>
                 <div className='flex flex-col justify-start items-start gap-[15px]'>
                   <div className='inline-flex justify-start items-center gap-[15px]'>
-                    <InViewWrapper className='w-[40px] h-[41px]'>
+                    <div className='w-[40px] h-[41px]'>
                       <svg xmlns='http://www.w3.org/2000/svg' width='40' height='41' viewBox='0 0 40 41' fill='none'>
                         <g clipPath='url(#clip0_1009_2116)'>
                           <circle cx='20' cy='20.3984' r='20' fill='#EE7373' fillOpacity='0.1' />
@@ -696,7 +696,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                           </clipPath>
                         </defs>
                       </svg>
-                    </InViewWrapper>
+                    </div>
                     <div className='inline-flex flex-col justify-start items-start gap-[5px]'>
                       <p className="justify-start text-[#1d2232]/70 text-3xl font-semibold font-['Pretendard']">
                         일반 서비스
@@ -707,7 +707,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                     </div>
                   </div>
                   <div className='inline-flex justify-start items-center gap-[15px]'>
-                    <InViewWrapper className='w-[40px] h-[41px]'>
+                    <div className='w-[40px] h-[41px]'>
                       <svg xmlns='http://www.w3.org/2000/svg' width='40' height='41' viewBox='0 0 40 41' fill='none'>
                         <g clipPath='url(#clip0_1009_2123)'>
                           <circle cx='20' cy='20.3984' r='20' fill='#7BC13A' fillOpacity='0.1' />
@@ -724,7 +724,7 @@ const Exclusive = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) => 
                           </clipPath>
                         </defs>
                       </svg>
-                    </InViewWrapper>
+                    </div>
                     <div className='inline-flex flex-col justify-start items-start gap-[5px]'>
                       <p className="justify-start text-[#1d2232]/70 text-3xl font-semibold font-['Pretendard']">
                         포포넛

@@ -35,7 +35,7 @@ const ClientFocusedDevelopment = forwardRef((props: any, ref: ForwardedRef<HTMLD
     visible: {
       y: 0,
       opacity: 1,
-      transition: { type: 'spring', stiffness: 100 }
+      transition: { type: 'spring' as const, stiffness: 100 }
     }
   }
 
@@ -368,7 +368,7 @@ const ClientFocusedDevelopment = forwardRef((props: any, ref: ForwardedRef<HTMLD
       id={'client_focused_development_title'}
       className={`w-screen px-[169px] pt-[80px] mb-[-500px] bg-neutral-50 inline-flex flex-col justify-start items-center gap-[90px] overflow-hidden ${isTablet && 'mt-[15px]'}`}
       style={{
-        height: isTablet ? '4091px' : '5391px'
+        height: isTablet ? '4691px' : '5991px'
       }}
     >
       <motion.div

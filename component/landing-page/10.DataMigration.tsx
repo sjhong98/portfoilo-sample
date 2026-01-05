@@ -24,12 +24,12 @@ const DataMigration = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>)
     }
   }
 
-  const item = {
+  const item: any = {
     hidden: { y: 30, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
-      transition: { type: 'spring', stiffness: 100 }
+      transition: { type: 'spring' as const, stiffness: 100 }
     }
   }
 
@@ -447,7 +447,7 @@ const DataMigration = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>)
             whileInView={{
               y: 0,
               opacity: 1,
-              transition: { type: 'spring', stiffness: 100, delay: 0.2 }
+              transition: { type: 'spring' as const, stiffness: 100, delay: 0.2 }
             }}
             viewport={{ once: true, amount: 0.2 }}
             className='p-[60px] bg-[#b06ddc] rounded-[40px] inline-flex flex-col justify-center items-start gap-[30px] overflow-hidden'

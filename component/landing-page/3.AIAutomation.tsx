@@ -43,7 +43,7 @@ const AIAutomation = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) 
         whileInView={{
           y: 0,
           opacity: 1,
-          transition: { type: 'spring', stiffness: 100 }
+          transition: { type: 'spring' as const, stiffness: 100 }
         }}
         viewport={{ once: true, amount: 0.2 }}
       >
@@ -92,7 +92,7 @@ const AIAutomation = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) 
             whileInView={{
               y: 0,
               opacity: 1,
-              transition: { type: 'spring', stiffness: 100 }
+              transition: { type: 'spring' as const, stiffness: 100 }
             }}
             viewport={{ once: true, amount: 0.2 }}
             className='self-stretch h-[332px] py-2.5 bg-color-white--60%/60 rounded-2xl backdrop-blur-sm flex flex-col justify-start items-center overflow-hidden'
@@ -135,7 +135,7 @@ const AIAutomation = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) 
             whileInView={{
               y: 0,
               opacity: 1,
-              transition: { type: 'spring', stiffness: 100 }
+              transition: { type: 'spring' as const, stiffness: 100 }
             }}
             viewport={{ once: true, amount: 0.2 }}
             className='self-stretch h-[332px] py-2.5 bg-color-white--60%/60 rounded-2xl backdrop-blur-sm flex flex-col justify-start items-center overflow-hidden'
@@ -178,7 +178,7 @@ const AIAutomation = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) 
             whileInView={{
               y: 0,
               opacity: 1,
-              transition: { type: 'spring', stiffness: 100 }
+              transition: { type: 'spring' as const, stiffness: 100 }
             }}
             viewport={{ once: true, amount: 0.2 }}
             className='self-stretch h-[332px] py-2.5 bg-color-white--60%/60 rounded-2xl backdrop-blur-sm flex flex-col justify-start items-center overflow-hidden'
@@ -229,7 +229,7 @@ const AIAutomation = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) 
         whileInView={{
           y: 0,
           opacity: 1,
-          transition: { type: 'spring', stiffness: 100 }
+          transition: { type: 'spring' as const, stiffness: 100 }
         }}
         viewport={{ once: true, amount: 0.2 }}
       >
@@ -287,7 +287,7 @@ const AIAutomation = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) 
                 whileInView={{
                   y: 0,
                   opacity: 1,
-                  transition: { type: 'spring', stiffness: 100 }
+                  transition: { type: 'spring' as const, stiffness: 100 }
                 }}
                 viewport={{ once: true, amount: 0.2 }}
                 className='w-[501px] min-h-[620px] bg-[#f4f5f7] rounded-[40px] inline-flex flex-col justify-start items-center overflow-hidden'
@@ -334,7 +334,7 @@ const AIAutomation = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) 
                 whileInView={{
                   y: 0,
                   opacity: 1,
-                  transition: { type: 'spring', stiffness: 100, delay: 0.2 }
+                  transition: { type: 'spring' as const, stiffness: 100, delay: 0.2 }
                 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ delay: 0.2 }}
@@ -378,7 +378,7 @@ const AIAutomation = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>) 
                 whileInView={{
                   y: 0,
                   opacity: 1,
-                  transition: { type: 'spring', stiffness: 100, delay: 0.35 }
+                  transition: { type: 'spring' as const, stiffness: 100, delay: 0.35 }
                 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ delay: 0.35 }}

@@ -28,7 +28,7 @@ const AI247Operation = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>
     visible: {
       y: 0,
       opacity: 1,
-      transition: { type: 'spring', stiffness: 100 }
+      transition: { type: 'spring' as const, stiffness: 100 }
     }
   }
 
@@ -343,7 +343,7 @@ const AI247Operation = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>
               whileInView={{
                 y: 0,
                 opacity: 1,
-                transition: { type: 'spring', stiffness: 100, delay: 0.2 }
+                transition: { type: 'spring' as const, stiffness: 100, delay: 0.2 }
               }}
               viewport={{ once: true, amount: 0.2 }}
               className='p-[60px] bg-[#faeff6] rounded-[40px] flex justify-start items-center gap-2.5 overflow-hidden'

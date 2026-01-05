@@ -134,7 +134,7 @@ const SharedPlatform = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>
             </span>
           </p>
         </div>
-        <InViewWrapper className='w-full h-[698px] relative flex justify-center'>
+        <div className='w-full h-[698px] relative flex justify-center'>
           <Image
             src={SharedPlatformImage}
             alt={'모두가 함께 쓰는 포포넛'}
@@ -143,7 +143,7 @@ const SharedPlatform = forwardRef((props: any, ref: ForwardedRef<HTMLDivElement>
             className={'h-[698px] w-auto object-cover'}
             placeholder={'blur'}
           />
-        </InViewWrapper>
+        </div>
       </motion.div>
     </section>
   )
